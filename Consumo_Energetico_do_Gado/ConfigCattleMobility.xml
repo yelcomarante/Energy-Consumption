@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<initialParams areaTypeID="0" behaviorID="0"/>	
+	<leaderGroup percentValue="2"/>	
+	<matrixTemperature temperatureMatrixID="0"/>
+	<matrixRelief reliefMatrixID="0"/>	
+	<nodesNumber number="10"/>
+	<horizontalConstant constant="0.00048"/>	
+	<verticalConstant constant="0.00067"/>	
+	<divisionsX axisX="4"/>	
+	<divisionsY axisY="4"/>	
+	<initialTime initial="7"/>	
+	<finalTime final="17"/>	
+
+	<DairyCattleWeights>
+		<DairyCattleWeight weightID="0" weight="500"/>
+		<DairyCattleWeight weightID="1" weight="550"/>
+		<DairyCattleWeight weightID="2" weight="600"/>
+		<DairyCattleWeight weightID="3" weight="650"/>
+		<DairyCattleWeight weightID="4" weight="500"/>
+		<DairyCattleWeight weightID="5" weight="550"/>
+		<DairyCattleWeight weightID="6" weight="600"/>
+		<DairyCattleWeight weightID="7" weight="650"/>
+		<DairyCattleWeight weightID="8" weight="500"/>
+		<DairyCattleWeight weightID="9" weight="550"/>
+	</DairyCattleWeights>
+	
+	<areaTypes>
+		<areaType areaTypeID="0" name="Pasto" xMin="0" yMin="0" zMin="0" xMax="225" yMax="225" zMax="0" behaviorsMatrixID="0"/>
+		<areaType areaTypeID="1" name="Agua" xMin="0" yMin="100" zMin="0" xMax="5" yMax="115" zMax="0" behaviorsMatrixID="1"/>
+		<areaType areaTypeID="2" name="Cocho" xMin="100" yMin="0" zMin="0" xMax="115" yMax="5" zMax="0" behaviorsMatrixID="2"/>
+		<areaType areaTypeID="3" name="Sombra" xMin="102.5" yMin="107.5" zMin="0" xMax="112.5" yMax="112.5" zMax="0" behaviorsMatrixID="3"/>		
+	</areaTypes>
+	
+	<behaviors>
+		<behavior behaviorID="0" name="ANDANDO" minSpeed="0.277" maxSpeed="0.833" />
+		<behavior behaviorID="1" name="CORRENDO" minSpeed="0.833" maxSpeed="1.388" />
+		<behavior behaviorID="2" name="DEITADO" minSpeed="0" maxSpeed="0" />
+		<behavior behaviorID="3" name="ALIMENTANDO" minSpeed="0.013" maxSpeed="0.027" />
+	</behaviors>
+	
+	<temperatureMatrices>
+		<temperatureMatrix temperatureMatrixID="0" type="default">
+			<row>
+	        	<cell value="20" /> 
+	        	<cell value="22" /> 
+	        	<cell value="24" /> 
+		        <cell value="26" /> 
+		     	<cell value="28" /> 
+	        	<cell value="30" /> 
+	        	<cell value="32" /> 
+		        <cell value="34" /> 
+	        	<cell value="32" /> 
+	        	<cell value="30" /> 
+		    </row>	
+			<row>
+	        	<cell value="22" /> 
+	        	<cell value="24" /> 
+	        	<cell value="26" /> 
+		        <cell value="28" /> 
+		     	<cell value="30" /> 
+	        	<cell value="32" /> 
+	        	<cell value="34" /> 
+		        <cell value="36" /> 
+	        	<cell value="34" /> 
+	        	<cell value="32" /> 
+		    </row>			
+		</temperatureMatrix>
+	</temperatureMatrices>
+	
+	<reliefMatrices>
+		<reliefMatrix reliefMatrixID="0" type="default">
+			<row>
+	        	<cell value="0" /> 
+	        	<cell value="0" /> 
+	        	<cell value="0" /> 
+		        <cell value="0" /> 
+		    </row>	
+			<row>
+	        	<cell value="0" /> 
+	        	<cell value="0" /> 
+	        	<cell value="0" /> 
+		        <cell value="0" /> 
+		    </row>	
+			<row>
+	        	<cell value="0" /> 
+	        	<cell value="0" /> 
+	        	<cell value="0" /> 
+		        <cell value="0" /> 
+		    </row>	
+			<row>
+	        	<cell value="0" /> 
+	        	<cell value="0" /> 
+	        	<cell value="0" /> 
+		        <cell value="0" /> 
+		    </row>				
+		</reliefMatrix>
+		
+		<reliefMatrix reliefMatrixID="1">
+			<row>
+	        	<cell value="0" /> 
+	        	<cell value="2.5" /> 
+	        	<cell value="5" /> 
+		        <cell value="10" /> 
+		    </row>	
+			<row>
+	        	<cell value="2.5" /> 
+	        	<cell value="2.5" /> 
+	        	<cell value="5" /> 
+		        <cell value="10" /> 
+		    </row>	
+			<row>
+	        	<cell value="5" /> 
+	        	<cell value="5" /> 
+	        	<cell value="10" /> 
+		        <cell value="15" /> 
+		    </row>	
+			<row>
+	        	<cell value="10" /> 
+	        	<cell value="10" /> 
+	        	<cell value="15" /> 
+		        <cell value="20" /> 
+		    </row>				
+		</reliefMatrix>
+		
+		<reliefMatrix reliefMatrixID="2">
+			<row>
+	        	<cell value="2.5" /> 
+	        	<cell value="5" /> 
+	        	<cell value="10" /> 
+		        <cell value="20" /> 
+		    </row>	
+			<row>
+	        	<cell value="-5" /> 
+	        	<cell value="10" /> 
+	        	<cell value="15" /> 
+		        <cell value="25" /> 
+		    </row>	
+			<row>
+	        	<cell value="-10" /> 
+	        	<cell value="-10" /> 
+	        	<cell value="20" /> 
+		     	<cell value="30" /> 
+		    </row>	
+			<row>
+	        	<cell value="-20" /> 
+	        	<cell value="-20" /> 
+	        	<cell value="25" /> 
+		        <cell value="35" /> 
+		    </row>				
+		</reliefMatrix>
+	</reliefMatrices>
+	
+	<markovAreaMatrices>
+		<markovAreaMatrix areaMatrixID="0" type="default">
+			<row> 
+	        	<cell value="0.4" /> 
+	        	<cell value="0.4" /> 
+	        	<cell value="0.3" /> 
+		        <cell value="0.4" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.2" /> 
+	        	<cell value="0.2" /> 
+	        	<cell value="0.3" /> 
+		        <cell value="0.2" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.2" /> 
+	        	<cell value="0.3" /> 
+	        	<cell value="0.2" /> 
+		        <cell value="0.2" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.2" /> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.2" /> 
+		        <cell value="0.2" /> 
+		    </row>
+		</markovAreaMatrix>
+		
+		<markovAreaMatrix areaMatrixID="1">
+			<row> 
+	        	<cell value="0.35" /> 
+	        	<cell value="0.3" /> 
+	        	<cell value="0.2" /> 
+		        <cell value="0.3" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.3" /> 
+	        	<cell value="0.35" /> 
+	        	<cell value="0.3" /> 
+		        <cell value="0.15" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.15" /> 
+	        	<cell value="0.15" /> 
+	        	<cell value="0.3" /> 
+		        <cell value="0.15" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.2" /> 
+	        	<cell value="0.2" /> 
+	        	<cell value="0.2" /> 
+		        <cell value="0.4" /> 
+		    </row>
+		</markovAreaMatrix>
+		
+		<markovAreaMatrix areaMatrixID="2">
+			<row> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.1" /> 
+		        <cell value="0.1" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.4" /> 
+	        	<cell value="0.4" /> 
+	        	<cell value="0.4" /> 
+		        <cell value="0.4" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.1" /> 
+		        <cell value="0.1" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.4" /> 
+	        	<cell value="0.4" /> 
+	        	<cell value="0.4" /> 
+		        <cell value="0.4" /> 
+		    </row>
+		</markovAreaMatrix>
+	</markovAreaMatrices>
+	
+	<markovBehaviorMatrices>
+		<markovBehaviorMatrix behaviorMatrixID="0" type="default">
+			<row> 
+	        	<cell value="0.4" /> 
+	        	<cell value="0.5" /> 
+	        	<cell value="0.3" /> 
+		        <cell value="0.3" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.5" /> 
+	        	<cell value="0.0" /> 
+		        <cell value="0.0" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.5" /> 
+		        <cell value="0.1" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.4" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.2" /> 
+		        <cell value="0.6" /> 
+		    </row>
+		</markovBehaviorMatrix>
+		
+		<markovBehaviorMatrix  behaviorMatrixID="1">
+			<row> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+		     	<cell value="0.0" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+		        <cell value="0.0" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+		        <cell value="0.0" /> 
+		    </row>
+			<row> 
+	        	<cell value="1.0" /> 
+	        	<cell value="1.0" /> 
+	        	<cell value="1.0" /> 
+		        <cell value="1.0" /> 
+		    </row>
+		</markovBehaviorMatrix>
+		
+		<markovBehaviorMatrix  behaviorMatrixID="2">
+			<row> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+		     	<cell value="0.0" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+		        <cell value="0.0" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.0" /> 
+		        <cell value="0.0" /> 
+		    </row>
+			<row> 
+	        	<cell value="1.0" /> 
+	        	<cell value="1.0" /> 
+	        	<cell value="1.0" /> 
+		        <cell value="1.0" /> 
+		    </row>
+		</markovBehaviorMatrix>
+		
+		<markovBehaviorMatrix  behaviorMatrixID="3">
+			<row> 
+	        	<cell value="0.3" /> 
+	        	<cell value="0.7" /> 
+	        	<cell value="0.3" /> 
+		        <cell value="0.2" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.3" /> 
+	        	<cell value="0.0" /> 
+		        <cell value="0.0" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.5" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.6" /> 
+		        <cell value="0.5" /> 
+		    </row>
+			<row> 
+	        	<cell value="0.1" /> 
+	        	<cell value="0.0" /> 
+	        	<cell value="0.1" /> 
+		        <cell value="0.3" /> 
+		    </row>
+		</markovBehaviorMatrix>		
+	</markovBehaviorMatrices>
+</root>
